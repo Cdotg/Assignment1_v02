@@ -48,14 +48,60 @@ $(document).ready(function() {
       plugins: {
         title: {
           display: true,
-          text: 'Achievement Comparison: Jordan vs. LeBron'
+          text: 'Achievement Comparison: Jordan vs. LeBron',
+          position: 'bottom' // Move title to the bottom
         },
         legend: {
-          position: 'top'
+          position: 'top',
+          labels: {
+            font: {
+              size: 10 // Adjust the font size as needed
+            }
+          }
         }
       }
     }
   });
 
-  // Add new chart script here
+  const ctx2 = document.getElementById('achievementChart2').getContext('2d');
+  const achievementChart2 = new Chart(ctx2, {
+    type: 'radar',
+    data: {
+      labels: ['Michael Jordan', 'LeBron James'], // Players as bars
+      datasets: achievements.map((achievement, index) => ({
+        label: achievement,
+        data: [jordanData[index], lebronData[index]], // Data for each player
+        backgroundColor: achievementColors[index], // Different colors for each category
+        borderColor: achievementColors[index], // Match border color to background color
+        borderWidth: 1
+      }))
+    },
+    options: {
+      scales: {
+        x: {
+          stacked: true, // Stack bars on the x-axis
+        },
+        y: {
+          stacked: true, // Stack bars on the y-axis
+          beginAtZero: true
+        }
+      },
+      
+      plugins: {
+        title: {
+          display: true,
+          text: 'Achievement Comparison: Jordan vs. LeBron',
+          position: 'bottom' // Move title to the bottom
+        },
+        legend: {
+          position: 'top',
+          labels: {
+            font: {
+              size: 10 // Adjust the font size as needed
+            }
+          }
+        }
+      }
+    }
+  });
 });

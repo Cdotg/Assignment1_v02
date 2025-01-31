@@ -1,3 +1,19 @@
-.container-fluid {
-    padding: 50px;
+#chart1{
+    width: 100px;
 }
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+#achievementChart {
+  width: 100% !important;
+  max-width: 400px; /* Adjust the max-width as needed */
+  height: auto !important;
+}
+
+h1.chart-title {
+  padding-top: 25px; /* Adjust the padding as needed */
+  text-align: center; /* Center the text */
+}
+
