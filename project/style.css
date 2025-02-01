@@ -2,18 +2,33 @@
     width: 100px;
 }
 
-.mb-4 {
-    margin-bottom: 1.5rem !important;
-}
 
-#achievementChart {
+
+#achievementChart, {
   width: 100% !important;
-  max-width: 400px; /* Adjust the max-width as needed */
-  height: auto !important;
+
+}
+#barChart {
+width: 100% !important;
+ min-height: 200px;
+ 
 }
 
 h1.chart-title {
-  padding-top: 25px; /* Adjust the padding as needed */
+  padding-top: 20px; /* Adjust the padding as needed */
   text-align: center; /* Center the text */
+}
+
+.chart-title {
+  font-size: 20px; /* Adjust the font size for the chart title */
+}
+
+.chart-legend {
+  font-size: 12px; /* Adjust the font size for the legend labels */
+}
+
+
+p {
+  font-size: 16px; /* Ensure paragraphs have the same font size */
 }
 
