@@ -6,55 +6,74 @@
   <title>Achievement Comparison: Jordan vs. LeBron</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">  <!-- External CSS file for styling -->
-
-  <script src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-  
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="data.js"></script> <!-- External JS file for data -->
   <script src="script.js"></script> <!-- External JS file for chart -->
-
 </head>
 <body>
-<div class="container my-5 mb-4">
-
-  
-    <div class="col-12"> 
-       <h1 class="chart-title">Jordan vs. LeBron</h1>
+  <div class="container my-5 mb-4">
+    <div class="col-12">
+      <div>
+      <div class="Subheader">
+        <h1>Jordan vs. LeBron</h1> 
       <div class="row">
-        <div class="col-md-6 col-xs-12 mt-5">
-          <div class="Subheader">What Makes a Goat?</div>
-          <p>
-            The debate over who is the greatest basketball player of all time—LeBron James or Michael Jordan—has captivated fans, analysts, and players for years. Both legends have redefined the game in their own eras, boasting unparalleled achievements, championship success, and iconic moments. Jordan, with his six NBA titles and perfect Finals record, is often celebrated for his dominance and clutch performances, while LeBron, with his four championships, longevity, and all-around versatility, has made a compelling case for his place at the top.
-          </p>
-            <div class="col-12">
-              <div>
-                <canvas id="achievementChart"> </canvas>
-              </div>
-            </div>
-    </div>
-    <div class="col-md-6 col-xs-12 mt-5">
-      <div class="Subheader">What Makes a Goat?</div>
-      <p>
-        The debate over who is the greatest basketball player of all time—LeBron James or Michael Jordan—has captivated fans, analysts, and players for years. Both legends have redefined the game in their own eras, boasting unparalleled achievements, championship success, and iconic moments. Jordan, with his six NBA titles and perfect Finals record, is often celebrated for his dominance and clutch performances, while LeBron, with his four championships, longevity, and all-around versatility, has made a compelling case for his place at the top.
-      </p>
-      <div class="col-12">
-        <div>
-          
-          <div class="chart-container">
-            <canvas id="barChart"></canvas>
+        <div class="col-md-6 col-xs-12">
+          <div class="Subheader"><h3>What Makes a Goat?</h3></div>
+          <div class="text">
+
+         
+            <p>
+              The debate over the greatest basketball player of all time (GOAT) has long centered around two legends: Michael Jordan and LeBron James. Both players have dominated their respective eras, redefining excellence on the court. While Jordan’s legacy is built on his perfect Finals record and scoring prowess, LeBron’s longevity, versatility, and all-around impact have kept this debate alive. Let’s analyze their careers through different statistical lenses.        
+            </p>
+           </div>
+           <div class="col-12">
+            <canvas id="achievementChart"></canvas>
           </div>
-          
-         <!-- Unique id for the second chart -->
         </div>
-        
+        <div class="col-md-6 col-xs-12">
+          <div class="Subheader">
+            <h3>Legacy and Achievements</h3>
+          </div>
+          <div class="text">
+            <p>
+              Michael Jordan and LeBron James have left an indelible mark on the NBA, redefining the game and inspiring generations of players. Jordan’s six NBA titles, five MVP awards, and 10 scoring titles have solidified his place as one of the greatest players of all time. LeBron, with his four championships, four MVP awards, and countless records, has made a compelling case for his GOAT status. Let’s explore their achievements in more detail.
+            </p>
+          </div>
+          <div class="col-12">
+            <div class="chart-container">
+              <canvas id="barChart"></canvas>
+            </div>
+          </div>
+        </div>
       </div>
-
-
+      <div class="row">
+        <div class="col-md-6 col-xs-12 row">
+          <canvas id="efficiencyChart"></canvas>
+        </div>
+        <div class="col-lg-6 col-xs-12 row">
+        <div class="col-12">
+          <div class="Subheader">
+            <h3>Career Free Throw %</h3>
+          </div>
+          <div class="text">
+            <p>Finally, our small pie charts compare their career and playoff shooting percentages. While Jordan was a mid-range maestro, LeBron’s ability to finish at the rim and his improved three-point shooting over time give him an edge in overall efficiency. The contrast in shot selection and scoring approach defines their greatness in unique ways.</p>
+            <div class="col-12 row mb-4">
+              <div class="col-6"> 
+                <div> <canvas id="careerFTChart"></canvas> 
+                </div>
+                 </div>
+            
+          <div class="col-6">
+            <div><canvas id="postseasonFTChart"></canvas>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
     </div>
   </div>
-</div>
 </body>
 </html>
