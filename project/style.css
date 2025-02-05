@@ -78,15 +78,10 @@ h1.chart-title {
     text-align: center; /* Center the text under the pie chart */
 }
 
-.icon {
-    width: 100px; /* Decrease the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Make the image a block element */
-    margin: 0 auto; /* Center the image */
-}
 
 .Logo {
-    width: 125px; /* Decrease the width of the image */
+    max-width: 75px;
+    width: 100%; /* Make the image responsive */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Make the image a block element */
     margin: 0 auto; /* Center the image */
@@ -96,3 +91,7 @@ h1.chart-title {
     background-color: black;
 }
 
+#title{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

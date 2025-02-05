@@ -12,22 +12,13 @@ $(document).ready(function() {
   const jordanData = [6, 5, 6, 14, 10, 11]; // Michael Jordan's achievements
   const lebronData = [4, 4, 4, 19, 1, 19];  // LeBron James' achievements
 
-  const jordanColors = [
-    'rgba(255, 0, 0, 0.8)',  // Red with opacity
-    'rgba(255, 0, 0, 0.6)',  // Red with more opacity
-    'rgba(255, 0, 0, 0.4)',  // Red with even more opacity
-    'rgba(0, 0, 0, 0.8)',    // Black with opacity
-    'rgba(0, 0, 0, 0.6)',    // Black with more opacity
-    'rgba(0, 0, 0, 0.4)'     // Black with even more opacity
-  ];
-
-  const lebronColors = [
-    'rgba(128, 0, 128, 0.8)',  // Purple with opacity
-    'rgba(128, 0, 128, 0.6)',  // Purple with more opacity
-    'rgba(128, 0, 128, 0.4)',  // Purple with even more opacity
-    'rgba(255, 215, 0, 0.8)',  // Gold with opacity
-    'rgba(255, 215, 0, 0.6)',  // Gold with more opacity
-    'rgba(255, 215, 0, 0.4)'   // Gold with even more opacity
+  const achievementColors = [
+    'rgba(255, 99, 132, 0.8)', // Color for NBA Championships
+    'rgba(54, 162, 235, 0.8)', // Color for MVP Awards
+    'rgba(255, 206, 86, 0.8)', // Color for Finals MVP Awards
+    'rgba(75, 192, 192, 0.8)', // Color for All-Star Selections
+    'rgba(153, 102, 255, 0.8)', // Color for Scoring Titles
+    'rgba(255, 159, 64, 0.8)'  // Color for All-NBA Team Selections
   ];
 
   const ctx = document.getElementById('achievementChart').getContext('2d');
@@ -38,8 +29,8 @@ $(document).ready(function() {
       datasets: achievements.map((achievement, index) => ({
         label: achievement,
         data: [jordanData[index], lebronData[index]], // Data for each player
-        backgroundColor: [jordanColors[index], lebronColors[index]], // Different colors for each category
-        borderColor: [jordanColors[index], lebronColors[index]], // Match border color to background color
+        backgroundColor: achievementColors[index], // Unique color for each attribute
+        borderColor: achievementColors[index], // Match border color to background color
         borderWidth: 1
       }))
     },
@@ -51,7 +42,8 @@ $(document).ready(function() {
           stacked: true, // Stack bars on the x-axis
           ticks: {
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 14 // Increase font size
             }
           }
         },
@@ -61,7 +53,8 @@ $(document).ready(function() {
           ticks: {
             stepSize: 5, // Ensure the scale increments to 5
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 14 // Increase font size
             }
           }
         }
@@ -72,7 +65,7 @@ $(document).ready(function() {
           text: 'Achievement Comparison: Jordan vs. LeBron',
           position: 'bottom', // Move title to the bottom
           font: {
-            size: 20, // Reset the font size for the chart title
+            size: 24, // Increase the font size for the chart title
             family: 'action_nba_webmedium' // Apply custom font
           },
           className: 'chart-title' // Add class for custom styling
@@ -81,7 +74,7 @@ $(document).ready(function() {
           position: 'top',
           labels: {
             font: {
-              size: 10, // Reset the font size for the legend labels
+              size: 14, // Increase the font size for the legend labels
               family: 'action_nba_webmedium' // Apply custom font
             },
             className: 'chart-legend' // Add class for custom styling
@@ -125,13 +118,15 @@ $(document).ready(function() {
             display: true,
             text: 'Categories', // X-axis label
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 16 // Increase font size
             }
           },
           barThickness: 20, // Adjust the bar thickness as needed
           ticks: {
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 14 // Increase font size
             }
           }
         },
@@ -140,7 +135,8 @@ $(document).ready(function() {
             display: true,
             text: 'Averages', // Y-axis label
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 16 // Increase font size
             }
           },
           beginAtZero: true, // Start Y-axis at 0
@@ -148,7 +144,8 @@ $(document).ready(function() {
           ticks: {
             stepSize: 5, // Set the scale increments to 5
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 14 // Increase font size
             }
           }
         },
@@ -158,7 +155,7 @@ $(document).ready(function() {
           position: 'top', // Legend position
           labels: {
             font: {
-              size: 10, // Reset the font size for the legend labels
+              size: 14, // Increase the font size for the legend labels
               family: 'action_nba_webmedium' // Apply custom font
             },
             className: 'chart-legend' // Add class for custom styling
@@ -168,7 +165,7 @@ $(document).ready(function() {
           display: true,
           text: 'LeBron James vs Michael Jordan Playoff Averages', // Chart title
           font: {
-            size: 20, // Reset the font size for the chart title
+            size: 24, // Increase the font size for the chart title
             family: 'action_nba_webmedium' // Apply custom font
           },
           className: 'chart-title' // Add class for custom styling
@@ -231,14 +228,16 @@ $(document).ready(function() {
             display: true,
             text: 'Usage Percentage (%)',
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 16 // Increase font size
             }
           },
           min: 25,
           max: 40,
           ticks: {
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 14 // Increase font size
             }
           }
         },
@@ -247,14 +246,16 @@ $(document).ready(function() {
             display: true,
             text: 'True Shooting Percentage (%)',
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 16 // Increase font size
             }
           },
           min: 50,
           max: 65,
           ticks: {
             font: {
-              family: 'action_nba_webmedium' // Apply custom font
+              family: 'action_nba_webmedium', // Apply custom font
+              size: 14 // Increase font size
             }
           }
         }
@@ -264,7 +265,7 @@ $(document).ready(function() {
           display: true,
           text: 'LeBron vs Jordan Efficiency During Prime Years (Usage% vs TS%)',
           font: {
-            size: 20, // Reset the font size for the chart title
+            size: 24, // Increase the font size for the chart title
             family: 'action_nba_webmedium' // Apply custom font
           }
         },
@@ -272,7 +273,7 @@ $(document).ready(function() {
           position: 'bottom',
           labels: {
             font: {
-              size: 10, // Reset the font size for the legend labels
+              size: 14, // Increase the font size for the legend labels
               family: 'action_nba_webmedium' // Apply custom font
             },
             className: 'chart-legend' // Add class for custom styling
