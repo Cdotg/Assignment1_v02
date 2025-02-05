@@ -49,12 +49,20 @@ $(document).ready(function() {
       scales: {
         x: {
           stacked: true, // Stack bars on the x-axis
+          ticks: {
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
+          }
         },
         y: {
           stacked: true, // Stack bars on the y-axis
           beginAtZero: true,
           ticks: {
-            stepSize: 5 // Ensure the scale increments to 5
+            stepSize: 5, // Ensure the scale increments to 5
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
           }
         }
       },
@@ -64,7 +72,8 @@ $(document).ready(function() {
           text: 'Achievement Comparison: Jordan vs. LeBron',
           position: 'bottom', // Move title to the bottom
           font: {
-            size: 20 // Reset the font size for the chart title
+            size: 20, // Reset the font size for the chart title
+            family: 'action_nba_webmedium' // Apply custom font
           },
           className: 'chart-title' // Add class for custom styling
         },
@@ -72,7 +81,8 @@ $(document).ready(function() {
           position: 'top',
           labels: {
             font: {
-              size: 10 // Reset the font size for the legend labels
+              size: 10, // Reset the font size for the legend labels
+              family: 'action_nba_webmedium' // Apply custom font
             },
             className: 'chart-legend' // Add class for custom styling
           }
@@ -114,18 +124,32 @@ $(document).ready(function() {
           title: {
             display: true,
             text: 'Categories', // X-axis label
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
           },
-          barThickness: 20 // Adjust the bar thickness as needed
+          barThickness: 20, // Adjust the bar thickness as needed
+          ticks: {
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
+          }
         },
         y: {
           title: {
             display: true,
             text: 'Averages', // Y-axis label
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
           },
           beginAtZero: true, // Start Y-axis at 0
           max: 35, // Set the maximum value for the Y-axis
           ticks: {
-            stepSize: 5 // Set the scale increments to 5
+            stepSize: 5, // Set the scale increments to 5
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
           }
         },
       },
@@ -134,7 +158,8 @@ $(document).ready(function() {
           position: 'top', // Legend position
           labels: {
             font: {
-              size: 10 // Reset the font size for the legend labels
+              size: 10, // Reset the font size for the legend labels
+              family: 'action_nba_webmedium' // Apply custom font
             },
             className: 'chart-legend' // Add class for custom styling
           }
@@ -143,7 +168,8 @@ $(document).ready(function() {
           display: true,
           text: 'LeBron James vs Michael Jordan Playoff Averages', // Chart title
           font: {
-            size: 20 // Reset the font size for the chart title
+            size: 20, // Reset the font size for the chart title
+            family: 'action_nba_webmedium' // Apply custom font
           },
           className: 'chart-title' // Add class for custom styling
         },
@@ -203,18 +229,34 @@ $(document).ready(function() {
         x: {
           title: {
             display: true,
-            text: 'Usage Percentage (%)'
+            text: 'Usage Percentage (%)',
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
           },
           min: 25,
-          max: 40
+          max: 40,
+          ticks: {
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
+          }
         },
         y: {
           title: {
             display: true,
-            text: 'True Shooting Percentage (%)'
+            text: 'True Shooting Percentage (%)',
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
           },
           min: 50,
-          max: 65
+          max: 65,
+          ticks: {
+            font: {
+              family: 'action_nba_webmedium' // Apply custom font
+            }
+          }
         }
       },
       plugins: {
@@ -222,14 +264,16 @@ $(document).ready(function() {
           display: true,
           text: 'LeBron vs Jordan Efficiency During Prime Years (Usage% vs TS%)',
           font: {
-            size: 20 // Reset the font size for the chart title
+            size: 20, // Reset the font size for the chart title
+            family: 'action_nba_webmedium' // Apply custom font
           }
         },
         legend: {
           position: 'bottom',
           labels: {
             font: {
-              size: 10 // Reset the font size for the legend labels
+              size: 10, // Reset the font size for the legend labels
+              family: 'action_nba_webmedium' // Apply custom font
             },
             className: 'chart-legend' // Add class for custom styling
           }

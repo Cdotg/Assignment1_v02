@@ -6,29 +6,39 @@
 }
 @font-face {
     font-family: 'action_nba_weblight';
-    src: url('css/fonts/action-nba-9.woff2') format('woff2');
-    font-weight: normal;
+    src: url('css/fonts/action-nba-3.woff2') format('woff2');
+    font-weight: 300; /* Increase font weight */
     font-style: normal;
 }
 body {
     font-family: 'action_nba_webmedium', sans-serif; /* Apply the custom font to the body */
+    letter-spacing: 0.05em; /* Add letter spacing */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Apply the new font family to paragraphs */
+    font-size: 1.5rem; /* Decrease font size for paragraphs */
+    letter-spacing: 0.05em; /* Add letter spacing */
 }
 
 h1, h3, h5 {
     font-family: 'action_nba_webmedium', sans-serif; /* Apply the custom font to headings */
+    letter-spacing: 0.05em; /* Add letter spacing */
 }
 
 h1 {
-    font-size: 70px; /* Increase font size for h1 */
+    font-size: 80px; /* Increase font size for h1 */
 }
 
 h3 {
-    font-size: 40px; /* Increase font size for h3 */
+    font-size: 45px; /* Increase font size for h3 */
+}
+h4 {
+    font-size: 30px; /* Increase font size for h4 */
 }
 
 h5 {
-    font-size: 30px; /* Increase font size for h5 */
-    text-align: center; /* Center the text */
+    font-size: 20px; /* Decrease font size for h5 */
 }
 
 #trychart{
@@ -39,7 +49,7 @@ h5 {
 
 #barChart {
     width: 100% !important;
-    min-height: 400px;
+    min-height: 600px;
 }
 
 #achievementChart {
@@ -68,8 +78,21 @@ h1.chart-title {
     text-align: center; /* Center the text under the pie chart */
 }
 
-p {
-    font-family: 'action_nba_weblight'; /* Apply the custom font to paragraphs */
-    font-size: 1.5rem; /* Increase font size for paragraphs */
+.icon {
+    width: 100px; /* Decrease the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+.Logo {
+    width: 125px; /* Decrease the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image */
+}
+
+.nav {
+    background-color: black;
 }
 

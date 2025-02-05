@@ -6,159 +6,144 @@
   <title>Achievement Comparison: Jordan vs. LeBron</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">  <!-- External CSS file for styling -->
-  <link rel="stylesheet" href="fonts.css">  <!-- External CSS file for custom font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="data.js"></script> <!-- External JS file for data -->
   <script src="script.js"></script> <!-- External JS file for chart -->
 </head>
 <body>
+  <div class="nav">
+    <img src="https://cdn.freebiesupply.com/images/large/2x/nba-logo-transparent.png" alt="NBA Logo" class="Logo mt-3 mb-3">
+  </div>
   <div class="container my-5 mb-4">
     <div class="col-12">
-      <div>
       <div class="Subheader text-center">
-        <h1>Jordan vs. LeBron</h1> 
+        <h1>Basketball Legends: Michael Jordan vs. LeBron James</h1> 
       </div>
-       <div class="Subheader"><h3>What Makes a Goat?</h3></div> 
-       <div class="col-12">
+      <div class="Subheader"><h3>What Makes a Goat?</h3></div> 
+      <div class="col-12">
         <div class="text">
-
-         
-            <p>
-              The debate over the greatest basketball player of all time (GOAT) has long centered around two legends: Michael Jordan and LeBron James. Both players have dominated their respective eras, redefining excellence on the court. While Jordan’s legacy is built on his perfect Finals record and scoring prowess, LeBron’s longevity, versatility, and all-around impact have kept this debate alive. Let’s analyze their careers through different statistical lenses.        
-            </p>
-           </div>
-          </div>
+          <p class="mt-3 mb-3">
+            The debate over the greatest basketball player of all time (GOAT) has long centered around two legends: Michael Jordan and LeBron James. Both players have dominated their respective eras, redefining excellence on the court. While Jordan’s legacy is built on his perfect Finals record and scoring prowess, LeBron’s longevity, versatility, and all-around impact have kept this debate alive. Let’s analyze their careers through different statistical lenses.        
+          </p>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-md-6 col-xs-12">
-         
-        
-            
-           <div class="col-12 row">
-            <div class="Subheader">
+        <div class="col-lg-6 col-md-12">
+          <div class="Subheader">
             <h3>Legacy and Achievements</h3>
           </div>
           <div class="text">
-            <p>
+            <p class="mt-3 mb-3">
               Michael Jordan and LeBron James have left an indelible mark on the NBA, redefining the game and inspiring generations of players. Jordan’s six NBA titles, five MVP awards, and 10 scoring titles have solidified his place as one of the greatest players of all time. LeBron, with his four championships, four MVP awards, and countless records, has made a compelling case for his GOAT status. Let’s explore their achievements in more detail.
             </p>
           </div>
-           
-            <div>
+          <div>
             <canvas id="achievementChart"></canvas>
           </div>
         </div>
-        </div>
-        <div class="col-md-6 col-xs-12">
-          
-          <div class="col-12">
-            <div class="Subheader">
-              <h3>Playoff Performance: Who Rises to the Occasion?</h3>
-            </div>
-            <div class="text">
-              <p>
-                Playoff basketball defines legacies, and our second chart compares their career playoff averages. While both players have elite postseason numbers, Jordan’s scoring explosion in the playoffs remains unmatched. Meanwhile, LeBron’s ability to contribute in multiple areas, leading in total playoff points, assists, and rebounds, underscores his all-around impact.
-
-              </p>
-            </div>
-            
-            <div class="container" id="stackedchart">
-              <canvas id="barChart"></canvas>
-            </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="Subheader">
+            <h3>Playoff Performance: Who Rises to the Occasion?</h3>
+          </div>
+          <div class="text">
+            <p class="mt-3 mb-3">
+              Playoff basketball defines legacies, and our second chart compares their career playoff averages. While both players have elite postseason numbers, Jordan’s scoring explosion in the playoffs remains unmatched. Meanwhile, LeBron’s ability to contribute in multiple areas, leading in total playoff points, assists, and rebounds, underscores his all-around impact.
+            </p>
+          </div>
+          <div class="mt-4">
+            <canvas id="barChart"></canvas>
           </div>
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-md-6 col-xs-12 row">
+        <div class="col-lg-6 col-md-12">
           <div class="Subheader">
             <h3>The Science of Efficiency</h3>
           </div>
           <div class="text">
-            <p>
+            <p class="mt-3 mb-3">
               Greatness isn’t just about putting up numbers—it’s about doing it efficiently. The scatter plot of usage rate vs. true shooting percentage is a fascinating insight into how each player balances responsibility and efficiency.
-
-              Jordan took on an immense scoring burden and still remained deadly efficient. LeBron, known for his court vision and playmaking, has found a way to maximize his efficiency while involving his teammates. Their approaches differ, but their results remain the same—greatness measured in numbers and impact.              </p>
+              Jordan took on an immense scoring burden and still remained deadly efficient. LeBron, known for his court vision and playmaking, has found a way to maximize his efficiency while involving his teammates. Their approaches differ, but their results remain the same—greatness measured in numbers and impact.
             </p>
           </div>
           <div class="col-12" id="trychart">
-          <canvas id="efficiencyChart"></canvas></div>
+            <canvas id="efficiencyChart"></canvas>
+          </div>
         </div>
-        <div class="col-lg-6 col-xs-12 row">
-        <div class="col-12">
+        <div class="col-lg-6 col-md-12">
           <div class="Subheader">
             <h3>Career and Postseason Shooting Percentages</h3>
           </div>
           <div class="text">
-            <p>Finally, our small pie charts compare their career and playoff shooting percentages. While Jordan was a mid-range maestro, LeBron’s ability to finish at the rim and his improved three-point shooting over time give him an edge in overall efficiency. The contrast in shot selection and scoring approach defines their greatness in unique ways.</p>
-            <div class="row">
-              <div class="Subheader">
-                <h3>Career Shooting Percentages</h3>
+            <p class="mt-3 mb-3">Finally, our small pie charts compare their career and playoff shooting percentages. While Jordan was a mid-range maestro, LeBron’s ability to finish at the rim and his improved three-point shooting over time give him an edge in overall efficiency. The contrast in shot selection and scoring approach defines their greatness in unique ways.</p>
+          </div>
+          <div class="row">
+            <div class="Subheader">
+              <h4>Career Shooting Percentages</h4>
+            </div>
+            <div class="col-12 row mb-4">
+              <div class="col-4"> 
+                <div>
+                  <canvas id="careerFTChart"></canvas>
+                  <h5>Free Throw %</h5>
+                </div>
               </div>
-              <div class="col-12 row mb-4">
-                <div class="col-4"> 
-                  <div>
-                    <canvas id="careerFTChart"></canvas>
-                    <h5>Free Throw %</h5>
-                  </div>
+              <div class="col-4">
+                <div>
+                  <canvas id="career3ptChart"></canvas>
+                  <h5>3-Point %</h5>
                 </div>
-                <div class="col-4">
-                  <div>
-                    <canvas id="career3ptChart"></canvas>
-                    <h5>3-Point %</h5>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div>
-                    <canvas id="careerFGChart"></canvas>
-                    <h5>Field Goal %</h5>
-                  </div>
+              </div>
+              <div class="col-4">
+                <div>
+                  <canvas id="careerFGChart"></canvas>
+                  <h5>Field Goal %</h5>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="Subheader">
-                <h3>Postseason Shooting Percentages</h3>
+          </div>
+          <div class="row">
+            <div class="Subheader">
+              <h4>Postseason Shooting Percentages</h4>
+            </div>
+            <div class="col-12 row mb-4">
+              <div class="col-4"> 
+                <div>
+                  <canvas id="postseasonFTChart"></canvas>
+                  <h5>Free Throw %</h5>
+                </div>
               </div>
-              <div class="col-12 row mb-4">
-                <div class="col-4"> 
-                  <div>
-                    <canvas id="postseasonFTChart"></canvas>
-                    <h5>Free Throw %</h5>
-                  </div>
+              <div class="col-4">
+                <div>
+                  <canvas id="postseason3ptChart"></canvas>
+                  <h5>3-Point %</h5>
                 </div>
-                <div class="col-4">
-                  <div>
-                    <canvas id="postseason3ptChart"></canvas>
-                    <h5>3-Point %</h5>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div>
-                    <canvas id="postseasonFGChart"></canvas>
-                    <h5>Field Goal %</h5>
-                  </div>
+              </div>
+              <div class="col-4">
+                <div>
+                  <canvas id="postseasonFGChart"></canvas>
+                  <h5>Field Goal %</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="Subheader">
-        <h3>Playoff Performance: Who Rises to the Occasion?</h3>
-      </div>
-        <p>At the heart of this debate lies a simple truth—greatness comes in many forms.
-
+      <div class="row mt-5 mb-5">
+        <div class="Subheader">
+          <h3>Playoff Performance: Who Rises to the Occasion?</h3>
+        </div>
+        <p class="mt-3 mb-3">At the heart of this debate lies a simple truth—greatness comes in many forms.
           If you value perfection on the biggest stage, an unrivaled competitive spirit, and the most dominant peak in basketball history, then Jordan is your GOAT.
-          
           If you admire longevity, versatility, and a player who has rewritten the record books year after year, then LeBron stands alone.
-          
           The numbers tell a compelling story, but the final chapter? That’s up to you.
-          
           Who’s your GOAT? Let the debate continue.
-        
         </p>
+      </div>
     </div>
   </div>
 </body>
