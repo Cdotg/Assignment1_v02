@@ -1,11 +1,34 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: url('fonts/action-nba-10.woff2') format('woff2');
+    font-family: 'action_nba_webmedium';
+    src: url('css/fonts/action-nba-10.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'action_nba_weblight';
+    src: url('css/fonts/action-nba-9.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 body {
-    font-family: 'CustomFont', sans-serif; /* Apply the custom font to the body */
+    font-family: 'action_nba_webmedium', sans-serif; /* Apply the custom font to the body */
+}
+
+h1, h3, h5 {
+    font-family: 'action_nba_webmedium', sans-serif; /* Apply the custom font to headings */
+}
+
+h1 {
+    font-size: 70px; /* Increase font size for h1 */
+}
+
+h3 {
+    font-size: 40px; /* Increase font size for h3 */
+}
+
+h5 {
+    font-size: 30px; /* Increase font size for h5 */
+    text-align: center; /* Center the text */
 }
 
 #trychart{
@@ -46,11 +69,7 @@ h1.chart-title {
 }
 
 p {
-    font-size: 14px; /* Increase font size for paragraphs */
-}
-
-h5 {
-    font-size: 14px; /* Make the titles smaller */
-    text-align: center; /* Center the text */
+    font-family: 'action_nba_weblight'; /* Apply the custom font to paragraphs */
+    font-size: 1.5rem; /* Increase font size for paragraphs */
 }
 
