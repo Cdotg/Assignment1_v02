@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'action_nba_webmedium';
-    src: url('css/fonts/action-nba-10.woff2') format('woff2');
+    src: url('fonts/action-nba-10.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'action_nba_weblight';
-    src: url('css/fonts/action-nba-3.woff2') format('woff2');
+    src: url('fonts/action-nba-3.woff2') format('woff2');
     font-weight: 300; /* Increase font weight */
     font-style: normal;
 }
